@@ -18,10 +18,3 @@ mkdocs:
 python:
   install:
     - requirements: requirements.txt
-
-# Optional: Build jobs to run
-jobs:
-  build:
-    commands:
-      - mkdocs build --strict
-        
