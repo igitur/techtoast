@@ -1,0 +1,7 @@
+title: Getting Started
+nav:
+  - Overview: index.md
+  - Install Arduino IDE: setup-arduino-ide.md
+  - Add ESP32 Support: add-esp32-support.md
+  - Connect ESP32: connect-esp32.md
+  - First Program: first-program.md

@@ -1,0 +1,8 @@
+title: Components Reference
+nav:
+  - Overview: index.md
+  - Development Board: ../getting-to-know-your-components.md#esp32-development-board
+  - Sensors: ../getting-to-know-your-components.md#sensors
+  - Output Devices: ../getting-to-know-your-components.md#output-devices
+  - Input Devices: ../getting-to-know-your-components.md#input-devices
+  - Passive Components: ../getting-to-know-your-components.md#passive-components

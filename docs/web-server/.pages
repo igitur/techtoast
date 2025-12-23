@@ -1,0 +1,6 @@
+title: Web Server Projects
+nav:
+  - Overview: index.md
+  - Simple Web Server: simple-web-server.md
+  - Control an LED: web-server-to-control-an-led.md
+  - Control 5 LEDs with Slider: web-server-to-control-5-leds-with-slider.md
