@@ -1,8 +1,6 @@
 ---
-title: ESP32: Light Sensor (Photoresistor)
+title: Light Sensor (Photoresistor)
 ---
-
-## ESP32: Light Sensor (Photoresistor)
 
 ### Components Needed:
 - 1x ESP32

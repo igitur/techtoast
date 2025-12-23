@@ -1,8 +1,6 @@
 ---
-title: ESP32: Soil Moisture Sensor
+title: Soil Moisture Sensor
 ---
-
-## ESP32: Soil Moisture Sensor
 
 ### Components Needed
 - 1x ESP32

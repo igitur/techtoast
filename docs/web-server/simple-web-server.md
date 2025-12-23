@@ -1,8 +1,6 @@
 ---
-title: ESP32: Simple Web Server
+title: Simple Web Server
 ---
-
-## ESP32: Simple Web Server
 
 Here's a simple tutorial to set up a web server using an ESP32. This project will allow you to create a basic web page hosted on the ESP32, which you can access from any device connected to the same network.
 

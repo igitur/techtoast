@@ -1,8 +1,6 @@
 ---
-title: ESP32: Active Buzzer
+title: Active Buzzer
 ---
-
-## ESP32: Active Buzzer
 
 ### Components Needed
 - 1x ESP32

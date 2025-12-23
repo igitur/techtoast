@@ -1,8 +1,6 @@
 ---
-title: ESP32: 1-Digit 7-Segment Display
+title: 1-Digit 7-Segment Display
 ---
-
-## ESP32: 1-Digit 7-Segment Display
 
 ### Components Needed
 - 1x ESP32

@@ -1,8 +1,6 @@
 ---
-title: ESP32: IR Obstacle Avoidance Sensor
+title: IR Obstacle Avoidance Sensor
 ---
-
-## ESP32: IR Obstacle Avoidance Sensor
 
 ### Components Needed
 - 1x ESP32

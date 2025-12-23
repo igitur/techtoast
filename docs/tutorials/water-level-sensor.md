@@ -1,8 +1,6 @@
 ---
-title: ESP32: Water Level Sensor
+title: Water Level Sensor
 ---
-
-## ESP32: Water Level Sensor
 
 ### Components Needed
 - 1x ESP32

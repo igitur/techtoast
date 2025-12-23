@@ -1,8 +1,6 @@
 ---
-title: ESP32: 5 LEDs Running Left & Right
+title: 5 LEDs Running Left & Right
 ---
-
-## ESP32: 5 LEDs Running Left & Right
 
 ### Components Needed
 - 1x ESP32

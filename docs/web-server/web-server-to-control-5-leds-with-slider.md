@@ -1,8 +1,6 @@
 ---
-title: ESP32: Web Server to Control 5 LEDs with Slider
+title: Web Server to Control 5 LEDs with Slider
 ---
-
-## ESP32: Web Server to Control 5 LEDs with Slider
 
 In this tutorial, we'll learn how to create a simple web server on the ESP32 that allows you to control ﬁve LEDs using a slider on a webpage. By adjusting the slider, you can turn on and off a sequence of LEDs in real-time, with the number of LEDs lit depending on the slider’s position. This project is a great way to explore both web development and hardware control with the ESP32, while also learning how to map values and use sliders to interact with hardware components. Let’s dive in and get your ESP32 set up for some interactive LED fun!
 

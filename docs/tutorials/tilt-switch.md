@@ -1,8 +1,6 @@
 ---
-title: ESP32: Tilt Switch
+title: Tilt Switch
 ---
-
-## ESP32: Tilt Switch
 
 ### Components Needed
 - 1x ESP32

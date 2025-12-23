@@ -1,8 +1,6 @@
 ---
-title: ESP32: Web Server to Control an LED
+title: Web Server to Control an LED
 ---
-
-## ESP32: Web Server to Control an LED
 
 Let's enhance the web server by adding an LED (we will use the built-in LED) to control it with a button on the web interface. The button will turn the LED on or off when pressed. Here’s how we can do that:
 

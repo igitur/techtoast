@@ -1,8 +1,6 @@
 ---
-title: ESP32: RGB LED
+title: RGB LED
 ---
-
-## ESP32: RGB LED
 
 ### Components Needed
 - 1x ESP32

@@ -1,8 +1,6 @@
 ---
-title: ESP32: DHT11 Temperature & Humidity Sensor
+title: DHT11 Temperature & Humidity Sensor
 ---
-
-## ESP32: DHT11 Temperature & Humidity Sensor
 
 ### Components Needed
 - 1x ESP32

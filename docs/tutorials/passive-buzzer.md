@@ -1,8 +1,6 @@
 ---
-title: ESP32: Passive Buzzer
+title: Passive Buzzer
 ---
-
-## ESP32: Passive Buzzer
 
 ### Components Needed
 - 1x ESP32

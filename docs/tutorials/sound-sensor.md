@@ -1,8 +1,6 @@
 ---
-title: ESP32: Sound Sensor
+title: Sound Sensor
 ---
-
-## ESP32: Sound Sensor
 
 ### Components Needed
 - 1x ESP32

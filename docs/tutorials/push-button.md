@@ -1,8 +1,6 @@
 ---
-title: ESP32: Push Button
+title: Push Button
 ---
-
-## ESP32: Push Button
 
 ### Components Needed
 - 1x ESP32

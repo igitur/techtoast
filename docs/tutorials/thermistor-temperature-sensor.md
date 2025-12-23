@@ -1,8 +1,6 @@
 ---
-title: ESP32: Thermistor (Temperature Sensor)
+title: Thermistor (Temperature Sensor)
 ---
-
-## ESP32: Thermistor (Temperature Sensor)
 
 ### Components Needed
 - 1x ESP32
