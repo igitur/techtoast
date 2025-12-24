@@ -41,9 +41,11 @@ You can install them from the Arduino Library Manager if not already installed.
 Before uploading the code, **replace your_SSID and your_PASSWORD** with your actual Wi-Fi credentials.
 
 #### Upload the following code onto the ESP32:
-#include <WiFi.h> #include <WebServer.h>
 
 ```c
+#include <WiFi.h>
+#include <WebServer.h>
+
 // Replace with your network credentials
 const char* ssid = "your_SSID";
 const char* password = "your_PASSWORD";
@@ -57,11 +59,8 @@ const int numLeds = 5;  // Number of LEDs
 void setup() {
   // Start the serial communication
   Serial.begin(115200);
-  // Set up the LED pins as outputs
-```
 
-### Explanation
-```c
+  // Set up the LED pins as outputs
   for (int i = 0; i < numLeds; i++) {
     pinMode(ledPins[i], OUTPUT);
     digitalWrite(ledPins[i], LOW);  // Start with all LEDs off
@@ -97,12 +96,7 @@ void handleRoot() {
 
   // Create the slider to control the LEDs
   html += "<label for=\"brightness\">Adjust LED Sequence:</label><br>";
-```
-
-  html += "<input type=\"range\" id=\"brightness\" name=\"brightness\" min=\"0\"
-
-```c
-max=\"100\" value=\"0\" oninput=\"updateLEDs(this.value)\">";
+  html += "<input type=\"range\" id=\"brightness\" name=\"brightness\" min=\"0\" max=\"100\" value=\"0\" oninput=\"updateLEDs(this.value)\">";
   html += "<span id=\"sliderValue\">0</span>%<br>";
 
   // Include a JavaScript to update the slider value and send it to the server
@@ -116,9 +110,11 @@ max=\"100\" value=\"0\" oninput=\"updateLEDs(this.value)\">";
   html += "</body></html>";
   server.send(200, "text/html", html);
 }
+
 void handleSetBrightness() {
   String value = server.arg("value");  // Get the slider value from the URL
   int brightness = value.toInt();
+
   // Calculate how many LEDs should be on based on slider value
   int ledsOn = 0;
 

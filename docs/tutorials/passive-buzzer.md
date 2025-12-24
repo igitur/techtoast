@@ -17,9 +17,10 @@ Using the breadboard, connect the Passive Buzzer to the ESP32 as follows:
 
 ### Code
 #### Upload the following code onto the ESP32:
-#define BUZZER_PIN 18  // Pin connected to the buzzer
 
 ```c
+#define BUZZER_PIN 18  // Pin connected to the buzzer
+
 void setup() {
   pinMode(BUZZER_PIN, OUTPUT);  // Set buzzer pin as output
 }

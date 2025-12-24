@@ -16,9 +16,11 @@ The ESP32 uses the WiFi library, which is already included in the Arduino IDE wh
 
 ### Code
 #### Upload the following code onto the ESP32:
-#include <WiFi.h> #include <WebServer.h>
 
 ```c
+#include <WiFi.h>
+#include <WebServer.h>
+
 // Replace with your network credentials
 const char* ssid = "your_SSID";
 const char* password = "your_PASSWORD";

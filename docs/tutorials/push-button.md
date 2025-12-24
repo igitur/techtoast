@@ -20,21 +20,29 @@ Using the breadboards, connect the Push Button to the ESP32 as follows:
 
 ### Code
 #### Upload the following code onto the ESP32:
-#define BUTTON_PIN 21  // Pin connected to the push button #define LED_PIN 2      // Pin connected to an LED
 
 ```c
+#define BUTTON_PIN 21  // Pin connected to the push button
+#define LED_PIN 2      // Pin connected to an LED
+
 void setup() {
+  Serial.begin(115200);
   pinMode(BUTTON_PIN, INPUT);  // Set button pin as input
   pinMode(LED_PIN, OUTPUT);    // Set LED pin as output
 }
 
 void loop() {
   int buttonState = digitalRead(BUTTON_PIN);  // Read button state
+
   if (buttonState == HIGH) {
     digitalWrite(LED_PIN, HIGH);  // Turn LED on
+    Serial.println("Button pressed - LED ON");
   } else {
     digitalWrite(LED_PIN, LOW);   // Turn LED off
+    Serial.println("Button released - LED OFF");
   }
+
+  delay(100);  // Small delay for stability
 }
 ```
 

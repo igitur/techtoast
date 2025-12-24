@@ -19,12 +19,12 @@ Using the breadboards, connect the thermistor to the ESP32 as follows:
 
 ### Code
 #### Upload the following code onto the ESP32:
+
 ```c
 const int thermistorPin = 34;           // Pin connected to the thermistor
 const float nominalResistance = 10000;  // 10k ohms at 25°C
 const float nominalTemperature = 25;    // Nominal temperature in Celsius
-const float bCoefficient = 3950;        // B-coefficient (value depends on the
-thermistor)
+const float bCoefficient = 3950;        // B-coefficient (value depends on the thermistor)
 
 void setup() {
   Serial.begin(115200);  // Start the serial communication at 115200 baud rate
@@ -34,12 +34,8 @@ void loop() {
   int sensorValue = analogRead(thermistorPin);  // Read the analog value from GPIO
 
   // Convert the sensor value to voltage (ESP32 uses 12-bit ADC range: 0 to 4095)
-  float voltage = sensorValue * (3.3 / 4095.0);  // Assuming 3.3V reference and
-```
+  float voltage = sensorValue * (3.3 / 4095.0);  // Assuming 3.3V reference and 12-bit ADC
 
-12-bit ADC
-
-```c
   // Avoid invalid calculations if the voltage is zero or too high
   if (voltage <= 0 || voltage >= 3.3) {
     Serial.println("Invalid reading");
@@ -58,8 +54,7 @@ void loop() {
   }
 
   // Calculate the temperature in Kelvin using the Steinhart-Hart equation
-  float temperatureK = 1 / (1 / (nominalTemperature + 273.15) + (log(resistance /
-nominalResistance) / bCoefficient));
+  float temperatureK = 1 / (1 / (nominalTemperature + 273.15) + (log(resistance / nominalResistance) / bCoefficient));
 
   // Convert temperature from Kelvin to Celsius
   float temperatureC = temperatureK - 273.15;

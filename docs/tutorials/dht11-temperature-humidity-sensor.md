@@ -26,11 +26,13 @@ To use the DHT11 module, you need to install the **DHT sensor library**.
 
 ### Code
 #### Upload the following code onto the ESP32:
-#include <DHT.h>
-
-#define DHTPIN 32      // Pin connected to the DHT11 data pin #define DHTTYPE DHT11  // Define the sensor type
 
 ```c
+#include <DHT.h>
+
+#define DHTPIN 32      // Pin connected to the DHT11 data pin
+#define DHTTYPE DHT11  // Define the sensor type
+
 DHT dht(DHTPIN, DHTTYPE);  // Initialize the DHT sensor
 
 void setup() {

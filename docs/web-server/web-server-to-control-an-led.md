@@ -20,9 +20,11 @@ Make sure you have the WiFi and WebServer libraries installed, as mentioned earl
 Before uploading the code, **make sure to replace your_SSID and your_PASSWORD** with your actual Wi-Fi network credentials.
 
 #### Upload the following code onto the ESP32:
-#include <WiFi.h> #include <WebServer.h>
 
 ```c
+#include <WiFi.h>
+#include <WebServer.h>
+
 // Replace with your network credentials
 const char* ssid = "your_SSID";
 const char* password = "your_PASSWORD";
@@ -46,10 +48,7 @@ void handleRoot() {
   } else {
     html += "<p><a href=\"/led/off\"><button>Turn LED OFF</button></a></p>";
   }
-```
 
-### Explanation
-```c
   html += "</body></html>";
   server.send(200, "text/html", html);
 }
@@ -102,6 +101,7 @@ void setup() {
   // Start the web server
   server.begin();
 }
+
 void loop() {
   // Handle client requests
   server.handleClient();

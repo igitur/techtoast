@@ -24,7 +24,8 @@ Using the breadboard, connect the components to the ESP32 as follows:
 
 ### Code
 #### Upload the following code onto the ESP32:
-```
+
+```c
 // Pin configuration for the 7-segment display
 int segmentA = 18;
 int segmentB = 19;
@@ -36,17 +37,21 @@ int segmentG = 26;
 
 // Digits 0-9, where each bit represents a segment (A-G)
 byte digits[] = {
-```
-
-  B1111110,  // 0   B0110000,  // 1   B1101101,  // 2   B1111001,  // 3   B0110011,  // 4   B1011011,  // 5   B1011111,  // 6   B1110000,  // 7   B1111111,  // 8   B1111011   //
-
-```c
+  B1111110,  // 0
+  B0110000,  // 1
+  B1101101,  // 2
+  B1111001,  // 3
+  B0110011,  // 4
+  B1011011,  // 5
+  B1011111,  // 6
+  B1110000,  // 7
+  B1111111,  // 8
+  B1111011   // 9
 };
 
 void setup() {
   // Set all segment pins as output
   pinMode(segmentA, OUTPUT);
-  pinMode(segmentB, OUTPUT);
   pinMode(segmentB, OUTPUT);
   pinMode(segmentC, OUTPUT);
   pinMode(segmentD, OUTPUT);
